@@ -6,8 +6,8 @@ gText_WouldYouLikeToRestYourPkmn:: @ 82726EB
     .string "Would you like to rest your POKéMON?$"
 
 gText_IllTakeYourPkmn:: @ 8272768
-    .string "Okay, I'll take your POKéMON\n"
-    .string "for a few seconds.$"
+    .string "Here, allow me to take your\n"
+    .string "POKéMON for a few seconds.$"
 
 gText_RestoredPkmnToFullHealth:: @ 8272798
     .string "Thank you for waiting.\p"
