@@ -5,6 +5,9 @@
 
 #define SPECIES_SHINY_TAG 500
 
+#define GET_TRAINERMON_IV(trainermon)       (trainermon &  0xFF)
+#define GET_TRAINERMON_BALL(trainermon)     (trainermon >> 8)
+
 struct MonCoords
 {
     // This would use a bitfield, but some function
@@ -15,14 +18,14 @@ struct MonCoords
 
 struct TrainerMonNoItemDefaultMoves
 {
-    u16 iv;
+    u16 iv_ball;
     u8 lvl;
     u16 species;
 };
 
 struct TrainerMonItemDefaultMoves
 {
-    u16 iv;
+    u16 iv_ball;
     u8 lvl;
     u16 species;
     u16 heldItem;
@@ -30,7 +33,7 @@ struct TrainerMonItemDefaultMoves
 
 struct TrainerMonNoItemCustomMoves
 {
-    u16 iv;
+    u16 iv_ball;
     u8 lvl;
     u16 species;
     u16 moves[MAX_MON_MOVES];
@@ -38,7 +41,7 @@ struct TrainerMonNoItemCustomMoves
 
 struct TrainerMonItemCustomMoves
 {
-    u16 iv;
+    u16 iv_ball;
     u8 lvl;
     u16 species;
     u16 heldItem;
