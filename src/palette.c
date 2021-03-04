@@ -157,6 +157,8 @@ bool8 BeginNormalPaletteFade(u32 selectedPalettes, s8 delay, u8 startY, u8 targe
 {
     u8 temp;
     u16 color = blendColor;
+    
+    delay -= 6;
 
     if (gPaletteFade.active)
     {
